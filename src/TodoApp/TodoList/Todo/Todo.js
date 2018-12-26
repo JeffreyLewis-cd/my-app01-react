@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Todo=({content})=>(
+const Todo = ({content}) => (
     <li>
-        <a href="/#">{content}</a>
+        <div className="view">
+            <input className="toggle" type="checkbox"/>
+            <label href="/#">{content}</label>
+        </div>
     </li>
 );
 
